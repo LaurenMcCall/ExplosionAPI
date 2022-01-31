@@ -11,5 +11,15 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class ReverseStringController : ControllerBase
     {
+        // This will have one HttpGet method
+        [HttpGet]
+        public string ReverseString()
+        {
+            return "What's your word?";
+        }
     }
 }
+
+// The method will accept a string either as a URL parameter or a query parameter. Your choice.
+// This endpoint method will reverse the string passed to it, manipulate it according to the kata Reverse String and return the result
+// Have your code return the string
