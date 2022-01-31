@@ -13,9 +13,9 @@ namespace ExplosionAPI.Controllers
     {
         // This will have one HttpGet method
         [HttpGet]
-        public string ReverseString()
+        public string ReverseString(string word)
         {
-            return "What's your word?";
+            return new string(word.ToArray().Reverse().ToArray());
         }
     }
 
