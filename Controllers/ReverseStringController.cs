@@ -18,6 +18,7 @@ namespace ExplosionAPI.Controllers
             return "What's your word?";
         }
     }
+
 }
 
 // The method will accept a string either as a URL parameter or a query parameter. Your choice.
