@@ -15,6 +15,9 @@ namespace ExplosionAPI.Controllers
         [HttpGet]
         public string ReverseString(string word)
         {
+            // string defaultWord = (word == null) ? "REVERSE" : word;
+            // return new string(defaultWord.ToArray().Reverse().ToArray());
+
             return new string(word.ToArray().Reverse().ToArray());
         }
     }
