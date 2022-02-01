@@ -11,5 +11,11 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class MumblingController : ControllerBase
     {
+        // [HttpGet]
+        // public string Mumbling(string numbers)
+        // {
+
+        // }
+
     }
 }
