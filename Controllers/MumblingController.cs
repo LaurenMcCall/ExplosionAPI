@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -11,11 +12,13 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class MumblingController : ControllerBase
     {
-        // [HttpGet]
-        // public string Mumbling(string numbers)
-        // {
-
-        // }
+        [HttpGet]
+        public string Mumbling(string s)
+        {
+            var index = 1;
+            var phrase = string.Join("-", s.Select(c => new String(c, index++))).ToLower();
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
+        }
 
     }
 }
